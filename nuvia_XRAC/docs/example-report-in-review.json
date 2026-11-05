@@ -1,0 +1,299 @@
+{
+  "report": {
+    "id": "rep-EXP-1042-1",
+    "patientId": "EXP-1042",
+    "status": "in_review",
+    "version": 3,
+    "generatedVersion": 1,
+    "isTestData": true,
+    "generatedBy": {
+      "label": "Generador local de NUVIA",
+      "model": null
+    },
+    "createdAt": "2026-10-28T09:00:00Z",
+    "updatedAt": "2026-10-28T10:15:00Z",
+    "confirmedAt": null,
+    "confirmedBy": null,
+    "savedBy": "Dra. Valeria Núñez",
+    "observations": "Pendiente confirmar la dosis de metformina en la próxima consulta.",
+    "notices": [],
+    "sections": [
+      {
+        "key": "summary",
+        "title": "Resumen clínico",
+        "items": [
+          {
+            "id": "rep-EXP-1042-1-i1",
+            "text": "Acudió a urgencias por dolor abdominal de dos días de evolución, sin vómito.",
+            "kind": "statement",
+            "authorship": "ai",
+            "status": "documented",
+            "sourceIds": [
+              "a-s1"
+            ]
+          },
+          {
+            "id": "rep-EXP-1042-1-i2",
+            "text": "Egresó el 05/09/2026 con indicación de seguimiento ambulatorio.",
+            "kind": "statement",
+            "authorship": "ai",
+            "status": "documented",
+            "sourceIds": [
+              "a-s2"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "background",
+        "title": "Antecedentes relevantes",
+        "items": [
+          {
+            "id": "rep-EXP-1042-1-i3",
+            "text": "Hipertensión arterial referida desde hace varios años; en tratamiento con losartán.",
+            "kind": "statement",
+            "authorship": "ai",
+            "status": "documented",
+            "sourceIds": [
+              "a-s3"
+            ],
+            "originalText": "Hipertensión arterial referida desde hace varios años.",
+            "edited": true
+          },
+          {
+            "id": "rep-EXP-1042-1-i4",
+            "text": "Diabetes mellitus tipo 2 registrada en la historia clínica.",
+            "kind": "statement",
+            "authorship": "ai",
+            "status": "documented",
+            "sourceIds": [
+              "a-s3"
+            ]
+          },
+          {
+            "id": "rep-EXP-1042-1-i5",
+            "text": "Alergia a penicilina referida en la historia clínica.",
+            "kind": "statement",
+            "authorship": "ai",
+            "status": "documented",
+            "sourceIds": [
+              "a-s3"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "history",
+        "title": "Historial y evolución",
+        "items": [
+          {
+            "id": "rep-EXP-1042-1-i6",
+            "text": "Gastritis aguda (diagnóstico de la nota de urgencias).",
+            "kind": "statement",
+            "authorship": "ai",
+            "status": "documented",
+            "sourceIds": [
+              "a-s4"
+            ]
+          },
+          {
+            "id": "rep-EXP-1042-1-i7",
+            "text": "Consulta de control de presión arterial, sin cambios en el tratamiento.",
+            "kind": "statement",
+            "authorship": "ai",
+            "status": "documented",
+            "sourceIds": [
+              "a-s9"
+            ]
+          },
+          {
+            "id": "rep-EXP-1042-1-i8",
+            "text": "Atención en urgencias del 02/09/2026 con ingreso a hospitalización.",
+            "kind": "statement",
+            "authorship": "ai",
+            "status": "documented",
+            "sourceIds": [
+              "a-s1",
+              "a-s8"
+            ]
+          },
+          {
+            "id": "rep-EXP-1042-1-i10",
+            "text": "Omeprazol 20 mg por vía oral cada 24 horas; indicación activa.",
+            "kind": "statement",
+            "authorship": "ai",
+            "status": "documented",
+            "sourceIds": [
+              "a-s5"
+            ]
+          },
+          {
+            "id": "rep-EXP-1042-1-i11",
+            "text": "Losartán 50 mg por vía oral cada 24 horas durante 30 días (receta).",
+            "kind": "statement",
+            "authorship": "ai",
+            "status": "documented",
+            "sourceIds": [
+              "a-s6"
+            ]
+          },
+          {
+            "id": "rep-EXP-1042-1-i12",
+            "text": "Metformina 850 mg por vía oral cada 12 horas (medicamento actual).",
+            "kind": "statement",
+            "authorship": "ai",
+            "status": "documented",
+            "sourceIds": [
+              "a-s3"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "recent",
+        "title": "Información reciente",
+        "items": [
+          {
+            "id": "rep-EXP-1042-1-i9",
+            "text": "Estudios realizados en el ingreso: biometría hemática y endoscopia superior.",
+            "kind": "statement",
+            "authorship": "ai",
+            "status": "documented",
+            "sourceIds": [
+              "a-s8"
+            ]
+          },
+          {
+            "id": "rep-EXP-1042-1-i13",
+            "text": "Última medición: presión 128/82 mmHg, pulso 76 por minuto, saturación 97 %.",
+            "kind": "statement",
+            "authorship": "ai",
+            "status": "needs_review",
+            "sourceIds": [
+              "a-s7"
+            ]
+          },
+          {
+            "id": "rep-EXP-1042-1-n3",
+            "text": "Se revisó el esquema de medicamentos con la paciente.",
+            "kind": "statement",
+            "authorship": "professional",
+            "edited": false,
+            "originalText": null,
+            "status": "documented",
+            "sourceIds": []
+          }
+        ]
+      },
+      {
+        "key": "missing",
+        "title": "Datos faltantes",
+        "items": []
+      },
+      {
+        "key": "contradictions",
+        "title": "Posibles contradicciones",
+        "items": []
+      },
+      {
+        "key": "review",
+        "title": "Aspectos que requieren revisión",
+        "items": [
+          {
+            "id": "rep-EXP-1042-1-i14",
+            "text": "Fecha con formato distinto en un registro: La fecha del registro de signos vitales llegó como «05/09/26». Se muestra tal como llegó, sin convertirla.",
+            "kind": "statement",
+            "authorship": "ai",
+            "status": "needs_review",
+            "sourceIds": [
+              "a-s7"
+            ]
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "id": "a-s1",
+        "kind": "record",
+        "table": "NotaMedicaUrg",
+        "recordId": "URG-20260902-0101",
+        "date": "2026-09-02",
+        "field": "MotivoConsulta",
+        "excerpt": "Dolor abdominal de dos días de evolución, sin vómito."
+      },
+      {
+        "id": "a-s2",
+        "kind": "record",
+        "table": "notaegreso",
+        "recordId": "EGR-20260905-0044",
+        "date": "2026-09-05",
+        "field": "MotivoEgreso",
+        "excerpt": "Mejoría. Egreso con seguimiento ambulatorio."
+      },
+      {
+        "id": "a-s3",
+        "kind": "record",
+        "table": "historiaclinica",
+        "recordId": "HC-0007",
+        "date": "2025-11-18",
+        "field": "Interrogatorio",
+        "excerpt": "Refiere hipertensión arterial desde hace varios años y diabetes tipo 2. Alergia a penicilina. Toma metformina 850 mg cada 12 horas."
+      },
+      {
+        "id": "a-s4",
+        "kind": "record",
+        "table": "NotaMedicaUrg",
+        "recordId": "URG-20260902-0101",
+        "date": "2026-09-02",
+        "field": "DesDiag1",
+        "excerpt": "Gastritis aguda"
+      },
+      {
+        "id": "a-s5",
+        "kind": "record",
+        "table": "Indicaciones",
+        "recordId": "IND-0310",
+        "date": "2026-09-02",
+        "field": "Indicacion",
+        "excerpt": "Omeprazol; 20 mg; vía oral; cada 24 horas; estatus: activa."
+      },
+      {
+        "id": "a-s6",
+        "kind": "record",
+        "table": "RecetasDet",
+        "recordId": "RDT-0520",
+        "date": "2026-09-05",
+        "field": "Articulo",
+        "excerpt": "Losartán 50 mg; vía oral; cada 24 horas; durante 30 días."
+      },
+      {
+        "id": "a-s7",
+        "kind": "record",
+        "table": "SignosVitales",
+        "recordId": "SV-2201",
+        "date": "05/09/26",
+        "field": "PA_NoInvasiva1",
+        "excerpt": "PA 128/82 mmHg; pulso 76 por minuto; SatO2 97 %."
+      },
+      {
+        "id": "a-s8",
+        "kind": "record",
+        "table": "NotaIngreso_HC",
+        "recordId": "ING-0033",
+        "date": "2026-09-02",
+        "field": "EstudiosRealizados",
+        "excerpt": "Biometría hemática. Endoscopia superior."
+      },
+      {
+        "id": "a-s9",
+        "kind": "record",
+        "table": "NotasEvolucion",
+        "recordId": "EVO-0412",
+        "date": "2026-03-14",
+        "field": "Plan1",
+        "excerpt": "Control de presión arterial dentro de metas. Continúa el mismo tratamiento."
+      }
+    ]
+  }
+}

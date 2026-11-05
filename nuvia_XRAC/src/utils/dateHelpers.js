@@ -1,102 +1,36 @@
-// Small, dependency-free date helpers for the NUVIA prototype.
-// Dates are stored internally as ISO strings ("YYYY-MM-DD") and times as
-// display strings like "09:00 AM" so mock data reads naturally in the UI.
+// Las fechas del expediente llegan como TEXTO y pueden venir en formatos distintos
+// o inválidos (así lo indica el diccionario de datos). Regla de esta interfaz:
+// solo se reformatea lo que se reconoce con seguridad (YYYY-MM-DD válido);
+// cualquier otro valor se muestra exactamente como llegó. Nunca se inventa una fecha.
 
-const MONTHS_ES = [
-  'enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio',
-  'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'
-]
+const ISO_DATE = /^(\d{4})-(\d{2})-(\d{2})$/
 
-const WEEKDAYS_ES = [
-  'domingo', 'lunes', 'martes', 'miércoles', 'jueves', 'viernes', 'sábado'
-]
+export function formatDisplayDate(value) {
+  if (value === undefined || value === null) return null
+  const text = String(value).trim()
+  if (text === '') return null
 
-export function startOfToday() {
-  const d = new Date()
-  d.setHours(0, 0, 0, 0)
-  return d
+  const match = ISO_DATE.exec(text)
+  if (match) {
+    const [, year, month, day] = match
+    const date = new Date(Number(year), Number(month) - 1, Number(day))
+    const valid =
+      date.getFullYear() === Number(year) &&
+      date.getMonth() === Number(month) - 1 &&
+      date.getDate() === Number(day)
+    if (valid) return `${day}/${month}/${year}`
+  }
+  return text
 }
 
-export function toISODate(date) {
-  const y = date.getFullYear()
-  const m = String(date.getMonth() + 1).padStart(2, '0')
-  const d = String(date.getDate()).padStart(2, '0')
-  return `${y}-${m}-${d}`
+// Marcas de tiempo generadas por el SISTEMA (creación o confirmación de un reporte), no
+// fechas clínicas: aquí sí se pueden interpretar y mostrar en la hora local.
+// Si el valor no es una fecha válida, se muestra tal como llegó.
+export function formatDateTime(value) {
+  if (value === undefined || value === null) return null
+  const text = String(value).trim()
+  if (text === '') return null
+  const date = new Date(text)
+  if (Number.isNaN(date.getTime()) || !/^\d{4}-\d{2}-\d{2}T/.test(text)) return text
+  return new Intl.DateTimeFormat('es-MX', { dateStyle: 'medium', timeStyle: 'short' }).format(date)
 }
-
-export function fromISODate(iso) {
-  const [y, m, d] = iso.split('-').map(Number)
-  return new Date(y, m - 1, d)
-}
-
-export function addDays(date, n) {
-  const d = new Date(date)
-  d.setDate(d.getDate() + n)
-  return d
-}
-
-// Convenience: ISO date string for "today + n days"
-export function isoOffset(n) {
-  return toISODate(addDays(startOfToday(), n))
-}
-
-export function formatDateLong(iso) {
-  const d = fromISODate(iso)
-  return `${d.getDate()} ${MONTHS_ES[d.getMonth()]} ${d.getFullYear()}`
-}
-
-export function formatDateShort(iso) {
-  const d = fromISODate(iso)
-  const dd = String(d.getDate()).padStart(2, '0')
-  const mm = String(d.getMonth() + 1).padStart(2, '0')
-  return `${dd}/${mm}/${d.getFullYear()}`
-}
-
-export function formatWeekdayShort(iso) {
-  const d = fromISODate(iso)
-  const label = WEEKDAYS_ES[d.getDay()]
-  return label.charAt(0).toUpperCase() + label.slice(1, 3)
-}
-
-export function formatDayNumber(iso) {
-  return fromISODate(iso).getDate()
-}
-
-export function isToday(iso) {
-  return iso === toISODate(startOfToday())
-}
-
-export function isPastDate(iso) {
-  return fromISODate(iso) < startOfToday()
-}
-
-export function isFutureDate(iso) {
-  return fromISODate(iso) > startOfToday()
-}
-
-// Parses "04:00 PM" into minutes-since-midnight for sorting/comparison.
-export function timeToMinutes(timeStr) {
-  const [time, period] = timeStr.split(' ')
-  let [h, m] = time.split(':').map(Number)
-  if (period === 'PM' && h !== 12) h += 12
-  if (period === 'AM' && h === 12) h = 0
-  return h * 60 + m
-}
-
-export function sortByDateTime(a, b) {
-  if (a.date !== b.date) return a.date < b.date ? -1 : 1
-  return timeToMinutes(a.time) - timeToMinutes(b.time)
-}
-
-export function relativeDayLabel(iso) {
-  if (isToday(iso)) return 'Hoy'
-  const tomorrow = isoOffset(1)
-  if (iso === tomorrow) return 'Mañana'
-  return `${formatWeekdayShort(iso)} ${formatDayNumber(iso)}`
-}
-
-export const ALL_TIME_SLOTS = [
-  '09:00 AM', '10:00 AM', '11:00 AM', '11:30 AM',
-  '12:00 PM', '01:00 PM', '02:00 PM', '03:00 PM',
-  '04:00 PM', '05:00 PM'
-]

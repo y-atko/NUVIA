@@ -1,0 +1,158 @@
+{
+  "report": {
+    "id": "rep-EXP-1187-1",
+    "patientId": "EXP-1187",
+    "status": "draft",
+    "version": 2,
+    "generatedVersion": 1,
+    "isTestData": true,
+    "generatedBy": {
+      "label": "Generador local de NUVIA",
+      "model": null
+    },
+    "createdAt": "2026-10-27T16:00:00Z",
+    "updatedAt": "2026-10-27T16:20:00Z",
+    "confirmedAt": null,
+    "confirmedBy": null,
+    "savedBy": "Dra. Valeria Núñez",
+    "observations": "Expediente con poca información: completar en la consulta.",
+    "notices": [],
+    "sections": [
+      {
+        "key": "summary",
+        "title": "Resumen clínico",
+        "items": [
+          {
+            "id": "rep-EXP-1187-1-i1",
+            "text": "Acudió a urgencias por cefalea de cuatro días, sin otros síntomas referidos.",
+            "kind": "statement",
+            "authorship": "ai",
+            "status": "documented",
+            "sourceIds": [
+              "b-s1"
+            ],
+            "originalText": "Acudió a urgencias por cefalea de cuatro días.",
+            "edited": true
+          }
+        ]
+      },
+      {
+        "key": "background",
+        "title": "Antecedentes relevantes",
+        "items": [
+          {
+            "id": "rep-EXP-1187-1-i2",
+            "text": "Cirugía de apéndice en la infancia, referida por el paciente.",
+            "kind": "statement",
+            "authorship": "ai",
+            "status": "documented",
+            "sourceIds": [
+              "b-s2"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "history",
+        "title": "Historial y evolución",
+        "items": []
+      },
+      {
+        "key": "recent",
+        "title": "Información reciente",
+        "items": []
+      },
+      {
+        "key": "missing",
+        "title": "Datos faltantes",
+        "items": [
+          {
+            "id": "rep-EXP-1187-1-i3",
+            "text": "Alergias: sin información en los registros: Ningún registro disponible menciona alergias. Que el dato no aparezca en el expediente no confirma que el paciente no las tenga.",
+            "kind": "absence",
+            "authorship": "ai",
+            "status": "needs_review",
+            "sourceIds": []
+          },
+          {
+            "id": "rep-EXP-1187-1-i4",
+            "text": "Medicamentos e indicaciones: sin registros: No se encontraron indicaciones ni recetas asociadas a este expediente.",
+            "kind": "absence",
+            "authorship": "ai",
+            "status": "needs_review",
+            "sourceIds": []
+          },
+          {
+            "id": "rep-EXP-1187-1-i5",
+            "text": "Diagnósticos: sin registros: La nota de urgencias disponible no incluye un diagnóstico.",
+            "kind": "absence",
+            "authorship": "ai",
+            "status": "needs_review",
+            "sourceIds": [
+              "b-s1"
+            ]
+          },
+          {
+            "id": "rep-EXP-1187-1-i6",
+            "text": "Signos vitales y estudios: sin registros",
+            "kind": "absence",
+            "authorship": "ai",
+            "status": "needs_review",
+            "sourceIds": []
+          },
+          {
+            "id": "rep-EXP-1187-1-n5",
+            "text": "Se solicitará al paciente información sobre alergias y medicamentos.",
+            "kind": "statement",
+            "authorship": "professional",
+            "edited": false,
+            "originalText": null,
+            "status": "documented",
+            "sourceIds": []
+          }
+        ]
+      },
+      {
+        "key": "contradictions",
+        "title": "Posibles contradicciones",
+        "items": []
+      },
+      {
+        "key": "review",
+        "title": "Aspectos que requieren revisión",
+        "items": [
+          {
+            "id": "rep-EXP-1187-1-i7",
+            "text": "Registro sin fecha: La historia clínica llegó sin fecha, por lo que no se puede ubicar en el tiempo.",
+            "kind": "statement",
+            "authorship": "ai",
+            "status": "needs_review",
+            "sourceIds": [
+              "b-s2"
+            ]
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "id": "b-s1",
+        "kind": "record",
+        "table": "NotaMedicaUrg",
+        "recordId": "URG-20260820-0202",
+        "date": "2026-08-20",
+        "field": "MotivoConsulta",
+        "excerpt": "Cefalea de cuatro días."
+      },
+      {
+        "id": "b-s2",
+        "kind": "record",
+        "table": "historiaclinica",
+        "recordId": "HC-0012",
+        "date": null,
+        "field": "Interrogatorio",
+        "excerpt": "Antecedentes personales: refiere cirugía de apéndice en la infancia."
+      }
+    ]
+  }
+}

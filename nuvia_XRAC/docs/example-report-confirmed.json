@@ -1,0 +1,241 @@
+{
+  "report": {
+    "id": "rep-EXP-1203-1",
+    "patientId": "EXP-1203",
+    "status": "confirmed",
+    "version": 4,
+    "generatedVersion": 1,
+    "isTestData": true,
+    "generatedBy": {
+      "label": "Generador local de NUVIA",
+      "model": null
+    },
+    "createdAt": "2026-10-24T11:00:00Z",
+    "updatedAt": "2026-10-24T12:30:00Z",
+    "confirmedAt": "2026-10-24T12:30:00Z",
+    "confirmedBy": "Dra. Valeria Núñez",
+    "savedBy": "Dra. Valeria Núñez",
+    "observations": "Contradicciones revisadas con el expediente impreso.",
+    "notices": [],
+    "sections": [
+      {
+        "key": "summary",
+        "title": "Resumen clínico",
+        "items": [
+          {
+            "id": "rep-EXP-1203-1-i1",
+            "text": "Acudió a urgencias por control de glucosa elevada.",
+            "kind": "statement",
+            "authorship": "ai",
+            "status": "documented",
+            "sourceIds": [
+              "c-s6"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "background",
+        "title": "Antecedentes relevantes",
+        "items": [
+          {
+            "id": "rep-EXP-1203-1-i2",
+            "text": "Diabetes mellitus tipo 2 registrada en la historia clínica.",
+            "kind": "statement",
+            "authorship": "ai",
+            "status": "documented",
+            "sourceIds": [
+              "c-s1"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "history",
+        "title": "Historial y evolución",
+        "items": [
+          {
+            "id": "rep-EXP-1203-1-i3",
+            "text": "Consulta de seguimiento por diabetes (junio de 2025).",
+            "kind": "statement",
+            "authorship": "ai",
+            "status": "documented",
+            "sourceIds": [
+              "c-s1"
+            ]
+          },
+          {
+            "id": "rep-EXP-1203-1-i4",
+            "text": "Metformina 850 mg cada 12 horas (historia clínica, 02/06/2025).",
+            "kind": "statement",
+            "authorship": "ai",
+            "status": "needs_review",
+            "sourceIds": [
+              "c-s1"
+            ]
+          },
+          {
+            "id": "rep-EXP-1203-1-i5",
+            "text": "Metformina 850 mg cada 24 horas (indicación activa, 10/09/2026).",
+            "kind": "statement",
+            "authorship": "ai",
+            "status": "needs_review",
+            "sourceIds": [
+              "c-s2"
+            ]
+          },
+          {
+            "id": "rep-EXP-1203-1-i6",
+            "text": "Enoxaparina 40 mg cada 24 horas con estatus activo y una fecha de suspensión anterior.",
+            "kind": "statement",
+            "authorship": "ai",
+            "status": "needs_review",
+            "sourceIds": [
+              "c-s3"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "recent",
+        "title": "Información reciente",
+        "items": [
+          {
+            "id": "rep-EXP-1203-1-i7",
+            "text": "Peso registrado: 82 kg.",
+            "kind": "statement",
+            "authorship": "ai",
+            "status": "documented",
+            "sourceIds": [
+              "c-s4"
+            ]
+          },
+          {
+            "id": "rep-EXP-1203-1-i8",
+            "text": "Peso registrado: 74 kg.",
+            "kind": "statement",
+            "authorship": "ai",
+            "status": "documented",
+            "sourceIds": [
+              "c-s5"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "missing",
+        "title": "Datos faltantes",
+        "items": [
+          {
+            "id": "rep-EXP-1203-1-i12",
+            "text": "Alergias: sin información en los registros: Ningún registro disponible menciona alergias. Que el dato no aparezca en el expediente no confirma que el paciente no las tenga.",
+            "kind": "absence",
+            "authorship": "ai",
+            "status": "needs_review",
+            "sourceIds": []
+          }
+        ]
+      },
+      {
+        "key": "contradictions",
+        "title": "Posibles contradicciones",
+        "items": [
+          {
+            "id": "rep-EXP-1203-1-i9",
+            "text": "Frecuencia distinta para el mismo medicamento: La historia clínica indica metformina cada 12 horas y la indicación activa cada 24 horas. Los registros son de fechas distintas: confirma cuál está vigente.",
+            "kind": "statement",
+            "authorship": "ai",
+            "status": "needs_review",
+            "sourceIds": [
+              "c-s1",
+              "c-s2"
+            ]
+          },
+          {
+            "id": "rep-EXP-1203-1-i10",
+            "text": "Indicación activa con fecha de suspensión: La enoxaparina figura como activa, pero el mismo registro trae una fecha de suspensión (08/09/2026) anterior a la fecha de la indicación.",
+            "kind": "statement",
+            "authorship": "ai",
+            "status": "needs_review",
+            "sourceIds": [
+              "c-s3"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "review",
+        "title": "Aspectos que requieren revisión",
+        "items": [
+          {
+            "id": "rep-EXP-1203-1-i11",
+            "text": "Cambio de peso entre dos registros: Los valores difieren (82 kg y 74 kg) y corresponden a fechas distintas. Puede ser un cambio real y no un error de captura.",
+            "kind": "statement",
+            "authorship": "ai",
+            "status": "needs_review",
+            "sourceIds": [
+              "c-s4",
+              "c-s5"
+            ]
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "id": "c-s1",
+        "kind": "record",
+        "table": "historiaclinica",
+        "recordId": "HC-0021",
+        "date": "2025-06-02",
+        "field": "MedicamentosActuales",
+        "excerpt": "Diabetes tipo 2. Metformina 850 mg cada 12 horas."
+      },
+      {
+        "id": "c-s2",
+        "kind": "record",
+        "table": "Indicaciones",
+        "recordId": "IND-0415",
+        "date": "2026-09-10",
+        "field": "Indicacion",
+        "excerpt": "Metformina; 850 mg; vía oral; cada 24 horas; estatus: activa."
+      },
+      {
+        "id": "c-s3",
+        "kind": "record",
+        "table": "Indicaciones",
+        "recordId": "IND-0416",
+        "date": "2026-09-10",
+        "field": "Status",
+        "excerpt": "Enoxaparina; 40 mg; subcutánea; cada 24 horas; estatus: activa; fecha de suspensión: 2026-09-08."
+      },
+      {
+        "id": "c-s4",
+        "kind": "record",
+        "table": "SignosVitales",
+        "recordId": "SV-3301",
+        "date": "2026-08-10",
+        "field": "Peso",
+        "excerpt": "82 kg"
+      },
+      {
+        "id": "c-s5",
+        "kind": "record",
+        "table": "SignosVitales",
+        "recordId": "SV-3302",
+        "date": "2026-09-01",
+        "field": "Peso",
+        "excerpt": "74 kg"
+      },
+      {
+        "id": "c-s6",
+        "kind": "record",
+        "table": "NotaMedicaUrg",
+        "recordId": "URG-20260910-0303",
+        "date": "2026-09-10",
+        "field": "MotivoConsulta",
+        "excerpt": "Control de glucosa elevada."
+      }
+    ]
+  }
+}

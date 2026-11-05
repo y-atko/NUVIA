@@ -1,0 +1,32 @@
+{
+  "items": [
+    {
+      "version": 1,
+      "status": "generated",
+      "savedAt": "2026-10-24T11:00:00Z",
+      "savedBy": null,
+      "note": "Versión inicial"
+    },
+    {
+      "version": 2,
+      "status": "draft",
+      "savedAt": "2026-10-24T11:30:00Z",
+      "savedBy": "Dra. Valeria Núñez",
+      "note": "Borrador guardado"
+    },
+    {
+      "version": 3,
+      "status": "in_review",
+      "savedAt": "2026-10-24T12:00:00Z",
+      "savedBy": "Dra. Valeria Núñez",
+      "note": "Enviado a revisión"
+    },
+    {
+      "version": 4,
+      "status": "confirmed",
+      "savedAt": "2026-10-24T12:30:00Z",
+      "savedBy": "Dra. Valeria Núñez",
+      "note": "Confirmado por el profesional"
+    }
+  ]
+}

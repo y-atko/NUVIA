@@ -1,0 +1,14 @@
+{
+  "inputs": [
+    {
+      "kind": "input",
+      "label": "Información aportada por el profesional en la consulta",
+      "text": "Texto escrito por el profesional"
+    },
+    {
+      "kind": "transcription",
+      "label": "Transcripción de audio revisada por el profesional",
+      "text": "Texto de la transcripción, revisado"
+    }
+  ]
+}

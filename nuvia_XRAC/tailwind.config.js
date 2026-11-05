@@ -31,7 +31,9 @@ export default {
           500: '#E6A23C'
         },
         coral: {
-          500: '#E15B4F'
+          50: '#FDEEEC',
+          500: '#E15B4F',
+          700: '#A93A30'
         }
       },
       fontFamily: {

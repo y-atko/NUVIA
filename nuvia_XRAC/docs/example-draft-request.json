@@ -1,0 +1,144 @@
+{
+  "baseVersion": 2,
+  "observations": "Expediente con poca información: completar en la consulta.",
+  "sections": [
+    {
+      "key": "summary",
+      "title": "Resumen clínico",
+      "items": [
+        {
+          "id": "rep-EXP-1187-1-i1",
+          "text": "Texto corregido por el profesional",
+          "kind": "statement",
+          "authorship": "ai",
+          "edited": true,
+          "originalText": "Acudió a urgencias por cefalea de cuatro días.",
+          "status": "documented",
+          "sourceIds": [
+            "b-s1"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "background",
+      "title": "Antecedentes relevantes",
+      "items": [
+        {
+          "id": "rep-EXP-1187-1-i2",
+          "text": "Cirugía de apéndice en la infancia, referida por el paciente.",
+          "kind": "statement",
+          "authorship": "ai",
+          "edited": false,
+          "originalText": null,
+          "status": "documented",
+          "sourceIds": [
+            "b-s2"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "history",
+      "title": "Historial y evolución",
+      "items": []
+    },
+    {
+      "key": "recent",
+      "title": "Información reciente",
+      "items": [
+        {
+          "id": "local-1",
+          "text": "Observación nueva del profesional",
+          "kind": "statement",
+          "authorship": "professional",
+          "edited": false,
+          "originalText": null,
+          "status": "documented",
+          "sourceIds": []
+        }
+      ]
+    },
+    {
+      "key": "missing",
+      "title": "Datos faltantes",
+      "items": [
+        {
+          "id": "rep-EXP-1187-1-i3",
+          "text": "Alergias: sin información en los registros: Ningún registro disponible menciona alergias. Que el dato no aparezca en el expediente no confirma que el paciente no las tenga.",
+          "kind": "absence",
+          "authorship": "ai",
+          "edited": false,
+          "originalText": null,
+          "status": "needs_review",
+          "sourceIds": []
+        },
+        {
+          "id": "rep-EXP-1187-1-i4",
+          "text": "Medicamentos e indicaciones: sin registros: No se encontraron indicaciones ni recetas asociadas a este expediente.",
+          "kind": "absence",
+          "authorship": "ai",
+          "edited": false,
+          "originalText": null,
+          "status": "needs_review",
+          "sourceIds": []
+        },
+        {
+          "id": "rep-EXP-1187-1-i5",
+          "text": "Diagnósticos: sin registros: La nota de urgencias disponible no incluye un diagnóstico.",
+          "kind": "absence",
+          "authorship": "ai",
+          "edited": false,
+          "originalText": null,
+          "status": "needs_review",
+          "sourceIds": [
+            "b-s1"
+          ]
+        },
+        {
+          "id": "rep-EXP-1187-1-i6",
+          "text": "Signos vitales y estudios: sin registros",
+          "kind": "absence",
+          "authorship": "ai",
+          "edited": false,
+          "originalText": null,
+          "status": "needs_review",
+          "sourceIds": []
+        },
+        {
+          "id": "rep-EXP-1187-1-n5",
+          "text": "Se solicitará al paciente información sobre alergias y medicamentos.",
+          "kind": "statement",
+          "authorship": "professional",
+          "edited": false,
+          "originalText": null,
+          "status": "documented",
+          "sourceIds": []
+        }
+      ]
+    },
+    {
+      "key": "contradictions",
+      "title": "Posibles contradicciones",
+      "items": []
+    },
+    {
+      "key": "review",
+      "title": "Aspectos que requieren revisión",
+      "items": [
+        {
+          "id": "rep-EXP-1187-1-i7",
+          "text": "Registro sin fecha: La historia clínica llegó sin fecha, por lo que no se puede ubicar en el tiempo.",
+          "kind": "statement",
+          "authorship": "ai",
+          "edited": false,
+          "originalText": null,
+          "status": "needs_review",
+          "sourceIds": [
+            "b-s2"
+          ]
+        }
+      ]
+    }
+  ]
+}

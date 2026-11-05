@@ -1,19 +1,14 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import { Home, CalendarDays, Users, Settings } from 'lucide-react'
+import { NAV_ITEMS } from './Sidebar.jsx'
 
-const NAV_ITEMS = [
-  { to: '/dashboard', label: 'Inicio', icon: Home, end: true },
-  { to: '/dashboard/agenda', label: 'Agenda', icon: CalendarDays },
-  { to: '/dashboard/pacientes', label: 'Pacientes', icon: Users },
-  { to: '/dashboard/configuracion', label: 'Ajustes', icon: Settings }
-]
-
-// A compact bottom tab bar so the dashboard stays usable on narrow screens,
-// where the full sidebar (components/dashboard/Sidebar.jsx) is hidden.
+// Barra inferior para pantallas pequeñas, donde la Sidebar se oculta.
 export default function MobileTabBar() {
   return (
-    <nav className="fixed inset-x-0 bottom-0 z-30 flex border-t border-mist-200 bg-white/95 backdrop-blur sm:hidden">
+    <nav
+      aria-label="Principal"
+      className="fixed inset-x-0 bottom-0 z-30 flex border-t border-mist-200 bg-white/95 backdrop-blur sm:hidden"
+    >
       {NAV_ITEMS.map((item) => (
         <NavLink
           key={item.to}

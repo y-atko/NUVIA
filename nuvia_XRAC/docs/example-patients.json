@@ -1,0 +1,61 @@
+{
+  "items": [
+    {
+      "id": "EXP-1042",
+      "label": "Ana Lucía Treviño Garza",
+      "age": 58,
+      "sex": "F",
+      "lastRecordDate": "2026-09-05"
+    },
+    {
+      "id": "EXP-1187",
+      "label": "Jorge Armando Salinas Leal",
+      "age": 41,
+      "sex": "M",
+      "lastRecordDate": "2026-08-20"
+    },
+    {
+      "id": "EXP-1203",
+      "label": "Roberto Elizondo Cantú",
+      "age": 67,
+      "sex": "M",
+      "lastRecordDate": "2026-09-10"
+    },
+    {
+      "id": "EXP-1311",
+      "label": "Daniela Guadalupe Peña Rangel",
+      "age": 33,
+      "sex": "F",
+      "lastRecordDate": "2026-09-14"
+    },
+    {
+      "id": "EXP-1355",
+      "label": "Luis Fernando Garza Morales",
+      "age": 29,
+      "sex": "M",
+      "lastRecordDate": null
+    },
+    {
+      "id": "EXP-1402",
+      "label": "Marta Elena Villarreal Soto",
+      "age": 72,
+      "sex": "F",
+      "lastRecordDate": "2026-10-22"
+    },
+    {
+      "id": "EXP-1466",
+      "label": "Carlos Eduardo Lozano Ibarra",
+      "age": 49,
+      "sex": "M",
+      "lastRecordDate": "2026-10-28"
+    },
+    {
+      "id": "EXP-1519",
+      "label": "Sofía Alejandra Medina Cavazos",
+      "age": 36,
+      "sex": "F",
+      "lastRecordDate": "2026-10-30"
+    }
+  ],
+  "total": 8
+}
